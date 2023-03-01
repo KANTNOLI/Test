@@ -1,7 +1,6 @@
-#include <iostream>
+#include "main.h"
 #include <string>
-
-using namespace std;
+#include "util.h"
 
 void rand_init(int* array, int size) {
 	for (int j = 0; j < size; j++) {
@@ -23,29 +22,3 @@ string output(int* array, int size) {
 	return msg;
 } 
 
-int find_max_index(int* array, int size) {
-	int max = 0;
-
-	for (int i = 1; i < size; i++)
-	{
-		if (array[max] < array[i]) {
-			max = i;
-		}
-	}
-
-	return max;
-}
-
-
-int find_max_index(int* array, int size) {
-	int min = 0;
-
-	for (int i = 1; i < size; i++)
-	{
-		if (array[min] > array[i]) {
-			min = i;
-		}
-	}
-
-	return min;
-}

@@ -1,9 +1,6 @@
-﻿#include <iostream>
-#include <string>
-
-using namespace std;
-
-void rand_init(int*, int);
+﻿#include "main.h"
+#include "util.h"
+#include "logic.h"
 
 int main() {
 
@@ -17,6 +14,8 @@ int main() {
 	int* array = new int[size];
 
 	rand_init(array, size);
+
+	cout << output(array, size) << endl;
 
 	delete[] array;
 
