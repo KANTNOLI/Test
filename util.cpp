@@ -21,7 +21,7 @@ string output(int* array, int size) {
 
 
 	return msg;
-}
+} 
 
 int find_max_index(int* array, int size) {
 	int max = 0;

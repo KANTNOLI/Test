@@ -8,7 +8,7 @@ void rand_init(int*, int);
 int main() {
 
 	int size;
-
+	 
 	do {
 		cout << "Input your size: ";
 		cin >> size;
